@@ -41,6 +41,7 @@ RUN apk --update add \
     && cd /tmp \
     && pip install --upgrade \
     pip \
+    docker-compose \
     setuptools \
     virtualenv \
     wheel \
