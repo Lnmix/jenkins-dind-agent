@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 
+ARG NPM_AUTH_TOKEN
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 
 RUN apt-get update -y       \
