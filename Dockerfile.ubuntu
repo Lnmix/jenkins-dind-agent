@@ -36,6 +36,9 @@ RUN curl -sSL https://github.com/docker/compose/releases/download/1.9.0-rc2/dock
 COPY ./wrapper.sh /usr/local/bin/wrapper.sh
 RUN chmod a+x /usr/local/bin/wrapper.sh
 
+COPY ./marathon-deploy.sh /usr/local/bin/marathon-deploy.sh
+RUN chmod a+x /usr/local/bin/marathon-deploy.sh
+
 VOLUME /var/lib/docker
 ENTRYPOINT []
 CMD []
